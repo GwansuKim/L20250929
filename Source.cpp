@@ -8,7 +8,7 @@ using namespace std;
 int Player[2] = { 0, 0 };
 char PlayerShape = 'P';
 
-int Monster[2] = { 0,0 };
+int Monster[2] = { 0, 0 };
 char MonsterShape = 'M';
 
 char KeyCode;
@@ -17,13 +17,13 @@ bool bIsContinue = true;
 int MapSize = 0;
 
 
-bool Predict(int Player)
+bool Predict(int Coord)
 {
-	if (Player < 0)
+	if (Coord < 0)
 	{
 		return false;
 	}
-	else if (Player > MapSize)
+	else if (Coord > MapSize)
 	{
 		return false;
 	}
