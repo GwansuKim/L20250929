@@ -23,7 +23,7 @@ bool Predict(int Coord)
 	{
 		return false;
 	}
-	else if (Coord > MapSize)
+	else if (Coord >= MapSize)
 	{
 		return false;
 	}
@@ -71,9 +71,9 @@ void Process()
 
 void Render()
 {
-	for (int Y = 0; Y <= MapSize; Y++)
+	for (int Y = 0; Y < MapSize; Y++)
 	{
-		for (int X = 0; X <= MapSize; X++)
+		for (int X = 0; X < MapSize; X++)
 		{
 			if (Y == Player[1] && X == Player[0])
 			{
