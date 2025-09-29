@@ -28,13 +28,7 @@ int MapSize = 0;
 
 HANDLE ScreenBuffers[2];
 
-enum ERenderScreenBuffer
-{
-	FrontBuffer = 0,
-	BackBuffer = 1,
-};
-
-int CurrentBufferIndex = FrontBuffer;
+int CurrentBufferIndex = 0;
 
 void Init()
 {
